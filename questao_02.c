@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main(){
-  int x;
+  int x ;
 
-  while (x != 0){
+  do{
     printf("Informe um valor: ");
     scanf("%d", &x);
-    
+
     switch (x){
       case 0: printf("Fim do programa.\n");
       break;
@@ -33,9 +33,8 @@ int main(){
       break;
       
       default: printf("Valor invalido.\n");
-    }
-    
-  }
+      }
+  }while (x != 0);
 
   return 0;
 }
